@@ -25801,7 +25801,7 @@ function Sayac() {
   var stil = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'royalblue' /* ADIM 2 */
+    color: sayici % 2 == 0 ? 'royalblue' : 'crimson' /* ADIM 2 */
   };
 
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -25949,7 +25949,7 @@ function RuhHalleri() {
   }, /*#__PURE__*/_react.default.createElement("h2", null, "RuhHalleri"), /*#__PURE__*/_react.default.createElement("div", {
     id: "ruhHali",
     style: stil
-  }, ruhHali, "'Nas\u0131l hissetti\u011Fimi bilmiyorum :-|'"), " ", /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
+  }, ruhHali), " ", /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
     id: "mutluEt",
     onClick: mutluEt
   }, "Mutlu Et"), /*#__PURE__*/_react.default.createElement("button", {
@@ -26176,7 +26176,7 @@ function Programcilar() {
   // Üçlüler, bir şeyin "gerçekliğine" bağlı olarak "bir şeyi veya diğerini" ifade etmek için harikadır..
   // Sözde-kod: öne çıkan true ise metin 1'i oluşturun, aksi takdirde metin 2'yi oluşturun..
   // Sabit kodlanmış false'u doğru değişkenle değiştirin.
-  false ? "\uD83C\uDF89 Hadi ".concat(oneCikaninIsmi(), "'\u0131 kutlayal\u0131m! \uD83E\uDD73") : 'Harika bir programcı seçin'));
+  true ? "\uD83C\uDF89 Hadi ".concat(oneCikaninIsmi(), "'\u0131 kutlayal\u0131m! \uD83E\uDD73") : 'Harika bir programcı seçin'));
 }
 },{"react":"../node_modules/react/index.js"}],"index.js":[function(require,module,exports) {
 "use strict";
@@ -26216,7 +26216,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52651" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57244" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
