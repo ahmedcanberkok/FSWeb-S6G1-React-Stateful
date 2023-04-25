@@ -49,32 +49,32 @@ import React, { useState } from 'react';
 let sayici = 0 ;
 export default function Sayac() {
   /* ADIM 1 buraya*/
-  const [sayi, setSayi] = useState(0);
+  const [sayici, setSayici] = useState(0);
 
 
   const artirici = () => {
     /* ADIM 4 buraya */
-    setSayi(sayi + 1);
+    setSayici(sayici + 1);
   };
   const azaltici = () => {
     /* ADIM 5 */
-  setSayi(sayi - 1) ;
+  setSayici(sayici - 1) ;
   };
   const reset = () => {
-     setSayi(0);
+     setSayici(0);
   };
 
   const stil = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: sayici % 2 == 0 ? 'royalblue':'crimson', /* ADIM 2 */
+    color: sayici % 2 == 0 ? 'crimson':'royalblue', /* ADIM 2 */
   };
 
   return (
     <div className='widget-counter container'>
       <h2>Sayaç</h2>
       <div id='sayici' style={stil}>
-        Sayı {sayici} { sayi % 2 == 0 ? "Çift" : "Tek"}
+        Sayı {sayici} { sayici % 2 == 0 ? "Çift" : "Tek"}
       </div>
       <div>
         <button id='artirici' onClick={artirici}>Artırıcı</button>
